@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <title>Javascript project</title>
+</head>
+<body>
+
+    <div class="container col-md-6 mt-4">
+        <div class="card col-md -6" style="background-color: lightgray">
+            <form id="form" class="mt-2 mb-2">
+                <label for="expenseamount"> choose Expense Amount: </label>
+                <input type="number" class="form-control" name="expenseamount" id="expenseamount">
+
+                <label for="description"> Choose Description: </label>
+                <input type="text" class="form-control" name="description" id="description">
+
+                <label for="category"> Choose a category : </label>
+                <select id="category" class="form-control mb-4">
+                    <option value="fuel">Fuel</option>
+                    <option value="food">Food</option>
+                    <option value="electricity">Electricity</option>
+                    <option value="movie">Movie</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <input type="submit" value="Add Expense">
+            </form>
+
+            <ul class="list-group mb-4" id="items"></ul>
+
+            <div id="total"></div>
+
+        </div>
+    </div>
+    <script src="javascriptproject.js"></script>
+</body>
+</html>
